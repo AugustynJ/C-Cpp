@@ -25,5 +25,7 @@ int main(void) {
         printf("%d. %f ", i+1, *(p_float + i));
         printf("%x \n", p_float + i);
     }
+    free(*p_int);
+    free(*p_float);
     return 0;
 }
